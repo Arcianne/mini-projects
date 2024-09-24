@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gizmo Gear: Job Application</title>
+    <link rel="shortcut icon" href="Assets/GizmoTechCorp_Icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/jobAppForm.css">
+</head>
+<body>
+    <main>
+        <div class="title">
+            <img src="assets/GizmoTechCorp.png">
+            <div>
+                <h1>Gizmo Tech Staff Application Form</h1>
+                <h2>Gizmo Tech Staff Form</h2>
+            </div>
+        </div>
+        <p>Please fill out this form with the required information</p>
+      <form id="survey-form" onsubmit="if(this.checkValidity()) { alert('Form Submission Successful!'); }">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <div class="name">
+                <div>
+                    <label for="last-name">Last Name: *</label>
+                    <input id="last-name" type="text" placeholder="Enter your Last name: " maxlength="30" required>
+                </div>
+                
+                <div>
+                    <label>First Name: *</label>
+                    <input type="text" placeholder="Enter your First name: " maxlength="30" required>
+                </div>
+                    
+                <div>
+                    <label>Middle Name: *</label>
+                    <input type="text" placeholder="Enter your Middle name: " maxlength="30" required>
+                </div>
+
+                <div>
+                    <label>Name Extension: *</label>
+                    <input type="text" placeholder="Jr./Sr./none " maxlength="20" required>
+                </div>
+            </div>
+
+            <div class="birth">
+                <div>
+                    <label>Gender: *</label>
+                    <input class="inline" type="radio" name="gender" required>Male</input>
+                    <input class="inline" type="radio" name="gender" required>Female</input>
+                </div>
+
+                <div>
+                    <label>Citizenship: *</label>
+                    <input type="text" required>
+                </div>
+                
+                <div>
+                    <label>Civil Status: *</label>
+                    <select name="status" id="dropdown" required>
+                        <option disabled selected value>Civil Status</option>
+                        <option value="single">Single</option>
+                        <option value="married">Married</option>
+                        <option value="widowed">Widowed</option>
+                        <option value="divorced">Divorced</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="birthdate">Date of Birth: *</label>
+                    <input type="date" id="birthdate" name="birthdate" min="1920-01-01" max="2024-07-25" required>
+                </div>
+            
+                <div>
+                    <label>Place of Birth:</label> 
+                    <input type="text" maxlength="20" required>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Address</legend>
+            <div>
+                <label>Unit/Floor/Room No:</label>
+                <input type="text">
+
+                <label>Building</label>
+                <input type="text">
+
+                <label>Block No:</label>
+                <input type="number">
+
+                <label>Street</label>
+                <input type="text">
+            </div>
+            
+            <div>
+                <label>Subdivision</label>
+                <input type="text">
+
+                <label>Barangay</label>
+                <input type="text">
+
+                <label>City/Municipality: *</label>
+                <input type="text" required>
+
+                <label>Province: *</label>
+                <input type="text" required>
+
+                <label>Zip Code: *</label>
+                <input type="text" placeholder="2300" maxlength="4" pattern="\d{4}" required>
+            </div>
+        </fieldset>
+        <fieldset>
+            <div>
+                <legend>Contacts</legend>
+                <label id="contact">Phone Number:</label>
+                <input type="tel" id="contact" name="contact" placeholder="09XXXXXXXXX" pattern="\d{11}" maxlength="11" required>
+
+                <label id="Email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="sabrinacarpenter11@gmail.com" required>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Education Background</legend>
+            <label for="">Elementary<input type="text"></label>
+            <label for="">Secondary(JHS)<input type="text"></label>
+            <label for="">Secondary(SHS)<input type="text"></label>
+            <label for="">College<input type="text"></label>
+        </fieldset>
+        <fieldset>
+            <legend>Skills</legend>
+            <label for=""><textarea id="skills" name="skills" rows="3" cols="30" placeholder="• Coding efficiently"></textarea></label>
+        </fieldset>
+
+        </label>
+            <input type="submit" value="Submit"/>
+        </form>
+      </form>
+    </main>
+</body>
+</html>
