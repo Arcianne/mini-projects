@@ -23,17 +23,17 @@
                 <div class="name">
                     <div>
                         <label for="last-name">Last Name: *</label>
-                        <input id="last-name" type="text" placeholder="Enter your Last name: " maxlength="30" required>
+                        <input id="last-name" type="text" placeholder="E.g. Dela Cruz" maxlength="30" required>
                     </div>
                     
                     <div>
                         <label>First Name: *</label>
-                        <input type="text" placeholder="Enter your First name: " maxlength="30" required>
+                        <input type="text" placeholder="E.g. Juan" maxlength="30" required>
                     </div>
                         
                     <div>
                         <label>Middle Name: *</label>
-                        <input type="text" placeholder="Enter your Middle name: " maxlength="30" required>
+                        <input type="text" placeholder="E.g. Garcia " maxlength="30" required>
                     </div>
 
                     <div>
@@ -46,17 +46,17 @@
 
                         <div class="radio">
                             <div>
-                                <input type="radio" name="gender" required>Male</input>
+                                <input type="radio" name="gender" required>Male
                             </div>
                             <div>
-                                <input type="radio" name="gender" required>Female</input>
+                                <input type="radio" name="gender" required>Female
                             </div>
                         </div>
                     </div>
 
                     <div>
                         <label>Citizenship: *</label>
-                        <input type="text" required>
+                        <input type="text" placeholder="E.g. Filipino" required>
                     </div>
                     
                     <div>
@@ -77,69 +77,217 @@
                 
                     <div>
                         <label>Place of Birth:</label> 
-                        <input type="text" maxlength="20" required>
+                        <input type="text" maxlength="20" placeholder="E.g. Tarlac City" required>
                     </div>
                 </div>
             </fieldset>
 
             <fieldset>
                 <legend>Address</legend>
-                <div>
-                    <label>Unit/Floor/Room No:</label>
-                    <input type="text">
+                <div class="address">
+                    <div>
+                        <label>House No/Unit/Floor/Room No:</label>
+                        <input type="text" placeholder="E.g. Floor 3, Room 302">   
+                    </div>
 
-                    <label>Building</label>
-                    <input type="text">
+                    <div>
+                        <label>Building</label>
+                        <input type="text" placeholder="E.g. Capas Heritage Building">
+                    </div>
 
-                    <label>Block No:</label>
-                    <input type="number">
-
-                    <label>Street</label>
-                    <input type="text">
-                </div>
+                    <div>
+                        <label>Block No:</label>
+                        <input type="number" placeholder="E.g. Block 1">
+                    </div>
+                    
+                    <div>
+                        <label>Street</label>
+                        <input type="text" placeholder="E.g. Cornelia Street">
+                    </div>
                 
-                <div>
-                    <label>Subdivision</label>
-                    <input type="text">
-
-                    <label>Barangay</label>
-                    <input type="text">
-
-                    <label>City/Municipality: *</label>
-                    <input type="text" required>
-
-                    <label>Province: *</label>
-                    <input type="text" required>
-
-                    <label>Zip Code: *</label>
-                    <input type="text" placeholder="2300" maxlength="4" pattern="\d{4}" required>
+                    <div>
+                        <label>Subdivision</label>
+                        <input type="text" placeholder="E.g Fiesta Communities">
+                    </div>
+                    
+                    <div>
+                        <label>Barangay</label>
+                        <input type="text" placeholder="E.g. San Isidro">
+                    </div>
+                    
+                    <div>
+                        <label>City/Municipality: *</label>
+                        <input type="text" placeholder="E.g. Tarlac City" required>
+                    </div>
+                    
+                    <div>
+                        <label>Province: *</label>
+                        <input type="text" placeholder="E.g. Tarlac" required>
+                    </div>
+                    
+                    <div>
+                        <label>Zip Code: *</label>
+                        <input type="text" placeholder="E.g. 2300" maxlength="4" pattern="\d{4}" required>
+                    </div>
                 </div>
             </fieldset>
+
             <fieldset>
-                <div>
-                    <legend>Contacts</legend>
-                    <label id="contact">Phone Number:</label>
-                    <input type="tel" id="contact" name="contact" placeholder="09XXXXXXXXX" pattern="\d{11}" maxlength="11" required>
-
-                    <label id="Email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="sabrinacarpenter11@gmail.com" required>
+                <legend>Contacts</legend>
+                <div class="contact">
+                    <div>
+                        <label id="contact">Phone Number: *</label>
+                        <input type="tel" id="contact" name="contact" placeholder="09XXXXXXXXX" pattern="\d{11}" maxlength="11" required>
+                    </div>
+                    
+                    <div>
+                        <label id="Email">Email: *</label>
+                        <input type="email" id="email" name="email" placeholder="E.g. sabrinacarpenter11@gmail.com" required>
+                    </div>
+                    
                 </div>
             </fieldset>
+
             <fieldset>
                 <legend>Education Background</legend>
-                <label for="">Elementary<input type="text"></label>
-                <label for="">Secondary(JHS)<input type="text"></label>
-                <label for="">Secondary(SHS)<input type="text"></label>
-                <label for="">College<input type="text"></label>
-            </fieldset>
-            <fieldset>
-                <legend>Skills</legend>
-                <label for=""><textarea id="skills" name="skills" rows="3" cols="30" placeholder="• Coding efficiently"></textarea></label>
+                <div class="education">
+                    <div>
+                        <label for="">Elementary</label>
+                        <input type="text" placeholder="E.g. Elementary School, 2005–2011">
+                    </div>
+
+                    <div>
+                        <label for="">Secondary(JHS)</label>
+                        <input type="text" placeholder="E.g. High School, 2011–2015">
+                    </div>
+
+                    <div>
+                        <label for="">Secondary(SHS)</label>
+                        <input type="text" placeholder="E.g. High School, Arts and Design, 2015–2017">
+                    </div>
+
+                    <div>
+                        <label for="">College</label>
+                        <input type="text" placeholder="E.g. University, Bachelor of Fine Arts, 2017–2021">
+                    </div>
+                </div>
             </fieldset>
 
-            </label>
+            <fieldset>
+                <legend>Skills</legend>
+                <div class="skills">
+                    <label for="skills"></label>
+                    <textarea id="skills" name="skills" rows="3" cols="30" placeholder="List your skills Here:"></textarea>
+                </div>
+                
+            </fieldset>
+
+            <fieldset>
+                <legend>Other Information</legend>
+                <div class="info">
+                    <div>
+                        <label>1. If selected for employment, are you willing to submit to a background check? *</label>
+
+                        <div class="radio">
+                            <div>
+                                <input type="radio" name="willing" required>Yes
+                            </div>
+                            <div>
+                                <input type="radio" name="willing" required>No
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label>2. Have you ever been found guilty of any administrative offense? *</label>
+
+                        <div class="radio">
+                            <div>
+                                <input type="radio" name="offense" required>Yes
+                            </div>
+                            <div>
+                                <input type="radio" name="offense" required>No
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label>3. Have you been criminally charged before any court? *</label>
+
+                        <div class="radio">
+                            <div>
+                                <input type="radio" name="charged" required>Yes
+                            </div>
+                            <div>
+                                <input type="radio" name="charged" required>No
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label>4. Have you ever been a candidate in a national or local election held within the last year (except Barangay election)? *</label>
+
+                        <div class="radio">
+                            <div>
+                                <input type="radio" name="candidate" required>Yes
+                            </div>
+                            <div>
+                                <input type="radio" name="candidate" required>No
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label>6. Have you ever been separated from the service in any of the following modes: resignation, retirement, dropped from the rolls, dismissal, termination, end of term, finished contract or phased out (abolition) in the public or private sector? *</label>
+                        <div class="radio">
+                            <div>
+                                <input type="radio" name="separated" required>Yes
+                            </div>
+                            <div>
+                                <input type="radio" name="separated" required>No
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pursuant">
+                        <p>Pursuant to: (a) Indigenous People's Act (RA 8371); (b) Magna Carta for Disabled Persons (RA 7277); and (c) Solo Parents Welfare Act of 2000 (RA 8972), please answer the following:</p>
+
+                        <label>1. Are you a member of any indigenous group? *</label>
+                        <div class="radio">
+                            <div>
+                                <input type="radio" name="indigenous" required>Yes
+                            </div>
+                            <div>
+                                <input type="radio" name="indigenous" required>No
+                            </div>
+                        </div>
+                        <label>2.  Are you a person with disability? *</label>
+                        <div class="radio">
+                            <div>
+                                <input type="radio" name="pwd" required>Yes
+                            </div>
+                            <div>
+                                <input type="radio" name="pwd" required>No
+                            </div>
+                        </div>
+
+                        <label>3. Are you a solo parent? *</label>
+                        <div class="radio">
+                            <div>
+                                <input type="radio" name="single-parent" required>Yes
+                            </div>
+                            <div>
+                                <input type="radio" name="single-parent" required>No
+                            </div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="button">
+                <label></label>
                 <input type="submit" value="Submit"/>
-            </form>
+            </div>
+
         </form>
     </main>
 </body>

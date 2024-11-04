@@ -30,6 +30,7 @@ p{
     margin: 0;
     text-align: center;
     font-size: 20px;
+    font-weight:800
 }
 
 form {
@@ -39,16 +40,17 @@ form {
 fieldset {
     padding: 2rem;
     margin: 10px auto 0px auto;
-    width: 50%;
+    width: 80%;
 }
 
 input, select{
-    width: 14rem;
+    width: 16rem;
     height: 30px;
     background-color: #C7FFFF;
     border-radius: 5px;
     padding: .25rem .5rem;
     margin-top: .25rem;
+    color: #17174F;
 }
 
 select{
@@ -62,7 +64,7 @@ legend{
     gap: 10px;
 }
 
-.gender input {
+.gender input, .info input {
     width: unset;
     margin: 0 0.5em 0 0;
     vertical-align: middle;
@@ -79,7 +81,7 @@ legend{
     justify-content: space-between;
 }
 
-.name{
+.name, .address, .contact, .education{
     display: grid;
     row-gap: 2rem;
     column-gap: 1rem;
@@ -91,4 +93,35 @@ legend{
     display: flex;
     gap: 40px;
     font-size: 19px;
+}
+
+.skills textarea{
+    width: 300px;
+    height: 500px;
+    cursor: not-allowed;
+    background-color: #C7FFFF;
+}
+
+.info{
+    font-size: 19px;
+}
+
+.pursuant p{
+    margin: 20px 0 20px 0;
+}
+
+.info .radio{
+    margin: 1rem;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.button input{
+    font-size: 19px;
+    color: #17174F;
+    
 }
